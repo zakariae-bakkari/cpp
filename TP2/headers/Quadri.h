@@ -7,6 +7,6 @@ public:
     Quadri();
     Quadri(Point &pt1, Point &pt2, Point &pt3, Point &pt4);
 
-    double aire() const;
+    double aire() const override;
 };
 #endif //CPP_QUADRI_H

@@ -7,7 +7,7 @@ private:double rayon;
 public:
     Cercle();
     Cercle(const Point &centre, double rayon);
-    double aire() const;
+    double aire() const override;
     double perimetre() const;
     inline void SetRayon(double r) {rayon = r;}
     inline double GetRayon() const {return rayon;}

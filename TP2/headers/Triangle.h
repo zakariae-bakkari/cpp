@@ -8,6 +8,6 @@ public:
     Triangle();
     Triangle(const Point &pt1, const Point &pt2, const Point &pt3);
 
-    double aire() const;
+    double aire() const override;
 };
 #endif //CPP_TRIANGLE_H

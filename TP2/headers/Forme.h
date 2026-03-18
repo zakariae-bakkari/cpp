@@ -18,7 +18,7 @@ public:
 
     double perimetre() const;
 
-    double aire() const;
+    virtual double aire() const;
 
     inline int GetNbSommets() const { return NbSommets; }
 
