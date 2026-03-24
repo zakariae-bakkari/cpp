@@ -1,53 +1,45 @@
-// #include <iostream>
-// #include <ostream>
-// // //
-// // // Created by admin on 07-Jan-26.
-// // //
-// // #include <iostream>
-// //
-// // #include"rectangle/rectangle.h"
-// //
-// // int main() {
-// //         // int *tableau = rectangle::saisier();
-// //     // for (int i = 0; i < 4; i++) {
-// //     //     std::cout << "tableau[" << i << "]= " << tableau[i] << '\n';
-// //     // }
-// //     // rectangle rect(tableau[0], tableau[1], tableau[2], tableau[3]);
-// //     // rect.afficher();
-// //     // if (rect.carre()) {
-// //     //     std::cout << "rect est un carre" << std::endl;
-// //     // } else {
-// //     //     std::cout << "rect n'est pas un carre" << std::endl;
-// //     // }
-// //     //
-// //     // std::cout << "la surface du rect est :" << rect.surface() << std::endl;
-// //     // rect.rotation90();
-// //     // rect.afficher();
-// //     // rect.rotation90();
-// //     // rect.afficher();
-// //
-// //     point p1(1,2);
-// //     point p2(3,4);
-// //     rectangle rect1(p1, p2);
-// //     rect1.afficher();
-// //     return 0;
-// // }
-// void imprimer(int valeur) {
-//     std::cout << valeur << std::endl;
-// }
-//
-// void imprimer(int valeur, int base = 10) {
-//     std::cout << valeur << base << std::endl;
-// }
-//
-// int main() {
-//     imprimer(5);
-//     imprimer(5, 16);
-//     return 0;
-// }
-#include "base.h"
+#include <iostream>
 
-int main() {
-    derive v(1234,4321);
+#include "rectangle/rectangle_2.h"
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Nombre de rectangles: ";
+    cin >> n;
+
+    Rectangle* tab = new Rectangle[n];
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Rectangle " << i+1 << " -> ";
+        tab[i].saisir();
+    }
+
+    // Calcul de l'intersection cumulative
+    Rectangle inter = tab[0];
+    bool valide = true;
+
+    for (int i = 1; i < n && valide; i++)
+    {
+        Rectangle tmp(0,0,0,0);
+        if (inter.intersection(tab[i], tmp) == 0)
+        {
+            cout << "L'intersection est vide." << endl;
+            valide = false;
+        }
+        else
+        {
+            inter = tmp;
+        }
+    }
+
+    if (valide)
+    {
+        cout << "Intersection de tous les rectangles: ";
+        inter.afficher();
+    }
+
+    delete[] tab;
     return 0;
 }
