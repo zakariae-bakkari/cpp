@@ -29,16 +29,21 @@ add_executable(CPP
 #        tp/deadly_diamand.cpp
 #        main.cpp
 #        Others/lamda_function.cpp
-        TP1/point/point.h
-        TP1/rectangle/rectangle2.cpp
-        TP1/rectangle/rectangle_2.h
-        TP1/main.cpp
-        Others/test2.cpp
-        Others/test_notion_virtual.cpp
-        Others/example/headers/vehicule.h
-        TP2/sources/Forme.cpp
-        TP2/sources/Point.cpp
-        TP2/sources/Quadri.cpp
-        TP2/sources/Triangle.cpp
-        TP2/sources/Cercle.cpp
+#        TP1/point/point.h
+#        TP1/rectangle/rectangle2.cpp
+#        TP1/rectangle/rectangle_2.h
+#        TP1/main.cpp
+#        Others/test2.cpp
+#        Others/test_notion_virtual.cpp
+#        Others/example/headers/vehicule.h
+#        TP2/sources/Forme.cpp
+#        TP2/sources/Point.cpp
+#        TP2/sources/Quadri.cpp
+#        TP2/sources/Triangle.cpp
+#        TP2/sources/Cercle.cpp
+        "Others/Examen final/Point.cpp"
+        "Others/Examen final/Point.h"
+        "Others/Examen final/rectangle.cpp"
+        "Others/Examen final/rectangle.h"
+        "Others/Examen final/main.cpp"
 )
