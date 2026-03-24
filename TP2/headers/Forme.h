@@ -9,18 +9,20 @@ protected:
 
 public:
     Forme(int nbsommets = 3);
-    ~Forme();
-    inline void SetPoint(int i, const Point &pt) { Sommets[i] = pt; }
 
-    inline Point GetPoint(int i) const { return Sommets[i]; }
+    ~Forme();
+
+    inline void SetPoint(int i, const Point &pt);
+
+    inline Point GetPoint(int i) const;
 
     void afficher() const;
 
     double perimetre() const;
 
-    virtual double aire() const;
+    virtual double aire() const =0;// purement virtual -> class abstrait
 
-    inline int GetNbSommets() const { return NbSommets; }
+    inline int GetNbSommets() const;
 
     void translation(const Point &pt);
 };

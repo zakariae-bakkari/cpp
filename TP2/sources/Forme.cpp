@@ -10,11 +10,23 @@ Forme::Forme(int nbsommets) {
     }
 
     this->NbSommets = nbsommets;
-        this->Sommets = new Point[nbsommets];
+    this->Sommets = new Point[nbsommets];
 }
 
 Forme::~Forme() {
     delete[] this->Sommets;
+}
+
+void Forme::SetPoint(int i, const Point &pt) {
+    Sommets[i] = pt;
+}
+
+Point Forme::GetPoint(int i) const {
+    return Sommets[i];
+}
+
+int Forme::GetNbSommets() const {
+    return NbSommets;
 }
 
 
@@ -38,4 +50,3 @@ void Forme::translation(const Point &pt) {
         Sommets[i] = Sommets[i].add(pt);
     }
 }
-

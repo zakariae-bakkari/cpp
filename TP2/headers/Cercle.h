@@ -9,7 +9,7 @@ public:
     Cercle(const Point &centre, double rayon);
     double aire() const override;
     double perimetre() const;
-    inline void SetRayon(double r) {rayon = r;}
-    inline double GetRayon() const {return rayon;}
+    inline void SetRayon(double r);
+    inline double GetRayon() const;
 };
 #endif //CPP_CERCLE_H
