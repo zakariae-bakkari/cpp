@@ -4,7 +4,7 @@
 
 #ifndef CPP_RECTANGLE_H
 #define CPP_RECTANGLE_H
-#include "../Examen final/Point.h"
+#include "Point.h"
 
 class Rectangle {
 private:

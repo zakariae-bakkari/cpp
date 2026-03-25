@@ -1,4 +1,4 @@
-#include "../Examen final/Point.h"
+#include "Point.h"
 #include <iostream>
 
 #include "rectangle.h"

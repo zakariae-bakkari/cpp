@@ -41,9 +41,12 @@ add_executable(CPP
 #        TP2/sources/Quadri.cpp
 #        TP2/sources/Triangle.cpp
 #        TP2/sources/Cercle.cpp
-        "Others/Examen final/Point.cpp"
-        "Others/Examen final/Point.h"
-        "Others/Examen final/rectangle.cpp"
-        "Others/Examen final/rectangle.h"
-        "Others/Examen final/main.cpp"
+        "Others/Examen final/ex2/Point.cpp"
+        "Others/Examen final/ex2/Point.h"
+        "Others/Examen final/ex2/rectangle.cpp"
+        "Others/Examen final/ex2/rectangle.h"
+        "Others/Examen final/ex2/main.cpp"
+        "Others/Examen final/ex3/polynome.cpp"
+        "Others/Examen final/ex3/polynome.h"
+        "Others/Examen final/ex3/main.cpp"
 )
