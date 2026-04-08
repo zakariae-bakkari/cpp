@@ -29,5 +29,5 @@ double Point::distance(const Point &pt) const {
 }
 
 double Point::vectoriel(const Point &pt1, const Point &pt2) {
-    return (this->)
+    // return (this->)
 }
